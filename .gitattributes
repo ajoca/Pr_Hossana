@@ -1,0 +1,5 @@
+# Ignorar JS/CSS de librerías externas
+Assets/js/* linguist-vendored
+Assets/css/* linguist-vendored
+Assets/vendor/** linguist-vendored
+Assets/jquery-ui/** linguist-vendored
