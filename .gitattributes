@@ -1,20 +1,19 @@
-# Ignorar JS/CSS e íconos de librerías externas para cálculo de lenguajes en GitHub
+# Ignorar todo lo front como vendored
+**/Assets/** linguist-vendored
+**/assets/** linguist-vendored
+**/vendor/** linguist-vendored
+**/plugins/** linguist-vendored
+**/jquery-ui/** linguist-vendored
+**/*.map linguist-vendored
+**/*.svg linguist-vendored
+**/*.eot linguist-vendored
+**/*.ttf linguist-vendored
+**/*.woff linguist-vendored
+**/*.woff2 linguist-vendored
 
-# Vendor y librerías
-Assets/vendor/** linguist-vendored
-Assets/jquery-ui/** linguist-vendored
-Assets/plugins/** linguist-vendored
+# Ignorar todo JS/CSS por defecto
+**/*.js linguist-vendored
+**/*.css linguist-vendored
 
-# Archivos JS/CSS locales pero no de PHP
-Assets/js/** linguist-vendored
-Assets/css/** linguist-vendored
-
-# Mapas de código fuente
-*.map linguist-vendored
-
-# Fonts e íconos
-*.svg linguist-vendored
-*.eot linguist-vendored
-*.ttf linguist-vendored
-*.woff linguist-vendored
-*.woff2 linguist-vendored
+# Forzar detección de PHP
+*.php linguist-language=PHP
